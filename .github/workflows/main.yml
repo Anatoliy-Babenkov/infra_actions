@@ -51,8 +51,8 @@ jobs:
     - name: executing remote ssh commands to deploy
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USER }}
+        host: 158.160.12.55
+        username: a_babenkov
         key: ${{ secrets.SSH_KEY }}
         script: |
           sudo docker pull babenkovanatoliy/infra_actions
