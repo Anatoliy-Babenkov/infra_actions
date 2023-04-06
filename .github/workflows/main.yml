@@ -55,7 +55,6 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          # Выполняет pull образа с DockerHub
           sudo docker pull babenkovanatoliy/lerning
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
